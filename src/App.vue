@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <form-projeto></form-projeto>
+
+    <lista-projetos></lista-projetos>
+    <area-total></area-total>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormProjeto from '@/components/FormProjeto'
+import ListaProjetos from '@/components/ListaProjetos'
+import AreaTotal from '@/components/AreaTotal'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    FormProjeto, ListaProjetos, AreaTotal
   }
 }
 </script>
@@ -21,7 +25,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
